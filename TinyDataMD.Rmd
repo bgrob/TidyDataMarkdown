@@ -1,0 +1,32 @@
+---
+title: "TidyDataMD"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Tidy Data Articles Summaries
+
+  Garrett Grolemund, in his article “Data Science with R,” discusses the benefits of using tidy data and describes the methods to make your data tidy. 
+
+	For data to be considered tidy, it must follow three criteria. 1. Each variable in the data set is placed in its own column 2. Each observation is placed in its own row 3. Each value is placed in its own cell. Therefore, tidy data allows data extraction to be significantly easier. R code also utilizes ordering and vectorization, so having the data be tidy is extremely important. 
+	
+	There are a number of different R codes one can utilize in order to tidy data. Two of the most prominent according to Grolemund are the spread and gather functions. Spread compacts the data in order to prevent duplicates and makes the data more readable. Gather in affect does the opposite. It takes the data and expands it out to more columns in order to highlight different variables and individual cells. Some other common data tidying codes are separate and unite. Separate splits up all numeric and alphabetic values into different cells as to clean up the cells and makes them more readable. Unite does the opposite of separate and brings together cells. 
+	
+	The 2nd article discussed topics along the same line as the first. The author talked about how more often than not, data is structured in an untidy manor. Either people aren’t familiar with the principles of tidy data or the original dataset was created for purposes other than analysis. 
+
+	The other new concept discussed in this article is how missing values are interpreted into the tidy data world. There are two types of missing data: explicit and implicit. Explicit missing data is cells that do not have a value, but are denoted with N/A or something along those lines. Implicit missing data is cells that do not have anything in them. There is code such as fill and complete which changes the data from implicit to explicit and vice versa. 
+
+  This article finished by talking about the advantages and uses of data sets that are not tidy in nature. There are two that are referenced in the text. 1. Alternative representations may have substantial performance or space advantages. 2. Specialized fields have evolved their own conventions for storing data that may be quite different to the conventions of tidy data. There are reasons to use non-tidy data, but as a rule of thumb, tidy data should be the default. 
+ 
+  The third reading explains data transformation.  The purpose of data transformation is when you already have a graphed dataset and now you need to rename new variables, create new variables, cleanup your data and transform your work into a more presentable finished project.  The chapter begins by explaining an example dataset and discusses key abbreviations.
+  
+  The rest of the chapter breaks down 5 key dplyr functions.  The first is picking observations by values, or the filter function.  Using “filter( )” you can subset observations based on the values.  You can make comparisons, find missing values and solve logical operations all using the filter function.  The second is “arrange ( )”.    The main purpose of “arrange” is to take data and a set of column names and arrange them by order.  The third function, “select( )” is mostly just used to focus in on the data we’re actually interested in.  The next function, “mutate ( )”, is used to add new columns that are functions of existing columns.  It allows us to add and see new variables we wouldn’t have seen before.  The last function this chapter discusses the “summarise ( )” function.  Summarise is useful because it allows you to collapse an entire data frame into a single row.
+  
+  The Fourth “reading” is summarized in a video.  The video is titled “Hands-on dplyr tutorial for faster data manipulation in R” by Data School.  In the video it introduces us to R, briefly discusses the basic verbs referenced in the past reading and then it gets into the actual coding.  
+  
+  The basic structure of the video is intro, breakdown of filter, arrange, select, mutate and then summarise. With filter the video walks through the viewer all the basic tips for coding with each verb.  For example he could highlight a code then give a quick run through of what do to and then he shows what it does.  “First write the name of the data frame comma then the condition comma and then any other condition.”  The video is full of tips that help with tons of r commands commonly executed.  An example is with chain commands you use the command “%>%”.  A good way to view this command is to think of it as a %>%=then.  With mutate the video talks about how to use the dplyr approach by printing out a new variable but not storing it.  The rest of the video breaks down the rest of the verbs, as well as some other common r functions, by showing cause and effect relationships between the coding and the consul.  
+
+  Along with the video, the assigned reading also provides a concrete version of what was outlined.  The document focuses on one data set and then shows what effect each different command has on that graph.

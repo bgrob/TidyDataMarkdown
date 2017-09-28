@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Tidy Data Markdown\"\noutput: html_document\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n#Tidy Data Articles Summaries\n\nThe third reading explains data transformation.  The purpose of data transformation is when you already have a graphed dataset and now you need to rename new variables, create new variables, cleanup your data and transform your work into a more presentable finished project.  The chapter begins by explaining an example dataset and discusses key abbreviations.\n           \n             The rest of the chapter breaks down 5 key dplyr functions.  The first is picking observations by values, or the filter function.  Using “filter( )” you can subset observations based on the values.  You can make comparisons, find missing values and solve logical operations all using the filter function.  The second is “arrange ( )”.    The main purpose of “arrange” is to take data and a set of column names and arrange them by order.  The third function, “select( )” is mostly just used to focus in on the data we’re actually interested in.  The next function, “mutate ( )”, is used to add new columns that are functions of existing columns.  It allows us to add and see new variables we wouldn’t have seen before.  The last function this chapter discusses the “summarise ( )” function.  Summarise is useful because it allows you to collapse an entire data frame into a single row.\n\n",
+    "created" : 1506573156158.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2498394949",
+    "id" : "C5624AC1",
+    "lastKnownWriteTime" : 1506573486,
+    "last_content_update" : 1506573500954,
+    "path" : "~/MyFirstMarkdownAssignment/TidyDataMarkdown/TidyDataMarkdown.Rmd",
+    "project_path" : "TidyDataMarkdown.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
